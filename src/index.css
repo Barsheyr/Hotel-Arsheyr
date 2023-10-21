@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-secondary text-black;
+  }
+  input::placeholder {
+    @apply text-black;
+  }
+  .h2 {
+    @apply font-primary text-[45px] mb-4;
+  }
+  .h3 {
+    @apply text-2xl font-primary font-semibold tracking-[1px] mb-4;
+  }
+  .btn {
+    @apply text-[15px] tracking-[3px] font-tertiary uppercase text-white flex-1 transition-all px-8 flex justify-center items-center;
+  }
+  .btn-lg {
+    @apply h-[60px];
+  }
+  .btn-sm {
+    @apply h-[20px] px-[20px] text-lg font-normal;
+  }
+  .title,
+  .section-title {
+    @apply text-6xl lg:text-8xl mb-6 font-bold;
+  }
+}
